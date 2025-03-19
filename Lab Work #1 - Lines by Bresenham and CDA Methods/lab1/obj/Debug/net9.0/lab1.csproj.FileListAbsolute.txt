@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\bin\Debug\net9.0\lab1.exe
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\bin\Debug\net9.0\lab1.deps.json
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\bin\Debug\net9.0\lab1.runtimeconfig.json
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\bin\Debug\net9.0\lab1.dll
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\bin\Debug\net9.0\lab1.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.AssemblyInfo.cs
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.sourcelink.json
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.dll
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\refint\lab1.dll
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\lab1.genruntimeconfig.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\lab1\obj\Debug\net9.0\ref\lab1.dll
