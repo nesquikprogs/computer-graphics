@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using LineDrawing;
 
-namespace drawLine
+namespace LineDrawing
 {
     static class Program
     {

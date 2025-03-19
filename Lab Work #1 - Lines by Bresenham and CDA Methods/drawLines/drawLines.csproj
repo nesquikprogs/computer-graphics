@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B75BD901-90DF-49D0-9378-83F16B41DB5E}</ProjectGuid>
+    <ProjectGuid>{3E3F2C8A-4394-434D-9530-C13171BE911D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>drawLine</RootNamespace>
-    <AssemblyName>drawLine</AssemblyName>
+    <RootNamespace>drawLines</RootNamespace>
+    <AssemblyName>drawLines</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

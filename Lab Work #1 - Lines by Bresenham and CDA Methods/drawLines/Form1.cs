@@ -6,6 +6,11 @@ namespace LineDrawing
 {
     public partial class Form1 : Form
     {
+        private bool isBresenhamDrawn = false; // Флаг для первой линии (метод Брезенхема)
+        private bool isCDADrawn = false; // Флаг для второй линии (метод ЦДА)
+        private Point[] firstLinePoints = new Point[2]; // Массив для координат первой линии
+        private Point[] secondLinePoints = new Point[2]; // Массив для координат второй линии
+
         public Form1()
         {
             InitializeComponent();
@@ -13,32 +18,54 @@ namespace LineDrawing
 
         private void btnBresenham_Click(object sender, EventArgs e)
         {
-            // Получаем координаты для первой линии (метод Брезенхема)
+            if (isBresenhamDrawn && isCDADrawn)
+            {
+                // При рисовании третьей линии, убираем первую и сдвигаем вторую на место первой
+                ClearAll();
+            }
+
+            // Получаем координаты для линии Брезенхема
             int x1 = int.Parse(txtX1.Text);
             int y1 = int.Parse(txtY1.Text);
             int x2 = int.Parse(txtX2.Text);
             int y2 = int.Parse(txtY2.Text);
+
+            firstLinePoints[0] = new Point(x1, y1);
+            firstLinePoints[1] = new Point(x2, y2);
 
             using (Graphics g = panel1.CreateGraphics())
             {
                 Pen pen = new Pen(Color.Red, 2);
                 DrawBresenhamLine(g, x1, y1, x2, y2, pen);
             }
+
+            isBresenhamDrawn = true;
         }
 
         private void btnCDA_Click(object sender, EventArgs e)
         {
-            // Получаем координаты для второй линии (метод ЦДА)
+            if (isBresenhamDrawn && isCDADrawn)
+            {
+                // При рисовании третьей линии, убираем первую и сдвигаем вторую на место первой
+                ClearAll();
+            }
+
+            // Получаем координаты для линии ЦДА
             int x1 = int.Parse(txtX1.Text);
             int y1 = int.Parse(txtY1.Text);
             int x2 = int.Parse(txtX2.Text);
             int y2 = int.Parse(txtY2.Text);
+
+            secondLinePoints[0] = new Point(x1, y1);
+            secondLinePoints[1] = new Point(x2, y2);
 
             using (Graphics g = panel1.CreateGraphics())
             {
                 Pen pen = new Pen(Color.Blue, 2);
                 DrawCDALine(g, x1, y1, x2, y2, pen);
             }
+
+            isCDADrawn = true;
         }
 
         // Метод для рисования линии методом Брезенхема
@@ -81,17 +108,30 @@ namespace LineDrawing
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        // Очистка всех линий
+        private void ClearAll()
         {
+            // Очищаем панель, чтобы удалить все нарисованные линии
+            panel1.Invalidate();
+            isBresenhamDrawn = false;
+            isCDADrawn = false;
 
+            // Переносим вторую линию на место первой
+            if (isCDADrawn)
+            {
+                firstLinePoints[0] = secondLinePoints[0];
+                firstLinePoints[1] = secondLinePoints[1];
+                isCDADrawn = false;
+            }
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        // Очистка экрана, чтобы сбросить рисование, если необходимо
+        private void ClearButton_Click(object sender, EventArgs e)
         {
-
+            ClearAll();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
