@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.Properties.Resources.resources
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\bin\Debug\drawLine.exe.config
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\bin\Debug\drawLine.exe
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\bin\Debug\drawLine.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.exe
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\drawLine.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #1 - Lines by Bresenham and CDA Methods\drawLine\obj\Debug\LineDrawing.Form1.resources
