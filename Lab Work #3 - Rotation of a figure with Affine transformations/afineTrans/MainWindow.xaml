@@ -1,7 +1,7 @@
 ﻿<Window x:Class="RotateShape.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Rotating Shape" Height="400" Width="400">
+        Title="Rotation using affine transformations" Height="400" Width="400">
     <Grid Margin="43,0,59,388">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
