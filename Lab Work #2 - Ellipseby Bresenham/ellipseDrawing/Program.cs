@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using EllipseDrawing;  // Подключаем пространство имен, где определена форма
 
-namespace LineDrawing
+namespace EllipseDrawing
 {
     static class Program
     {
@@ -12,7 +13,7 @@ namespace LineDrawing
             // Настройка и запуск формы
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); // Запуск основной формы
+            Application.Run(new Form1());  // Запуск основной формы
         }
     }
 }

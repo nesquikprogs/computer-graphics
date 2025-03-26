@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\bin\Debug\ellipseDrawing.exe.config
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\bin\Debug\ellipseDrawing.exe
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\bin\Debug\ellipseDrawing.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.Properties.Resources.resources
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.exe
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\ellipseDrawing.pdb
+C:\Users\PC\Desktop\Study\Компьютерная графика\Lab Work #2 - Ellipseby Bresenham\ellipseDrawing\obj\Debug\EllipseDrawing.Form1.resources

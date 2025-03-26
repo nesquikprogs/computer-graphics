@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace drawEllipse.Properties
+namespace ellipseDrawing.Properties
 {
 
 

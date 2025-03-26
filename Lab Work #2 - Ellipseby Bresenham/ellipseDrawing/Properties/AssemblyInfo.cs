@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("drawEllipse")]
+[assembly: AssemblyTitle("ellipseDrawing")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("drawEllipse")]
+[assembly: AssemblyProduct("ellipseDrawing")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("79691f29-a3d5-41c6-b6a2-c4c5d961c895")]
+[assembly: Guid("86bd0581-1f48-4d74-9b25-cf042f679b82")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

@@ -2,12 +2,10 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace LineDrawing
+namespace EllipseDrawing
 {
     public partial class Form1 : Form
     {
-        private bool isEllipseDrawn = false; // Флаг для отслеживания, нарисован ли эллипс
-
         public Form1()
         {
             InitializeComponent();
@@ -16,15 +14,9 @@ namespace LineDrawing
         // Обработчик клика по кнопке рисования эллипса
         private void btnDrawEllipse_Click(object sender, EventArgs e)
         {
-            // Если эллипс уже нарисован, очищаем панель
-            if (isEllipseDrawn)
-            {
-                ClearAll();
-            }
-
             // Получаем диаметр эллипса
-            int width = int.Parse(txtWidth.Text); // Горизонтальный диаметр
-            int height = int.Parse(txtHeight.Text); // Вертикальный диаметр
+            int width = int.Parse(txtWidth.Text);  // Горизонтальный диаметр
+            int height = int.Parse(txtHeight.Text);  // Вертикальный диаметр
 
             // Начальные координаты центра эллипса
             int centerX = panel1.Width / 2;
@@ -36,8 +28,6 @@ namespace LineDrawing
                 Pen pen = new Pen(Color.Red, 2);  // Используем красную ручку для рисования
                 DrawEllipseBresenham(g, centerX, centerY, width, height, pen);  // Рисуем эллипс
             }
-
-            isEllipseDrawn = true; // Устанавливаем флаг для нарисованного эллипса
         }
 
         // Метод рисования эллипса методом Брезенхема
@@ -97,15 +87,64 @@ namespace LineDrawing
             }
         }
 
+        // Обработчик клика по кнопке рисования окружности
+        private void btnDrawCircle_Click(object sender, EventArgs e)
+        {
+            // Получаем радиус окружности
+            int radius = int.Parse(txtRadius.Text);
+
+            // Начальные координаты центра окружности
+            int centerX = panel1.Width / 2;
+            int centerY = panel1.Height / 2;
+
+            // Создаем объект Graphics для рисования
+            using (Graphics g = panel1.CreateGraphics())
+            {
+                Pen pen = new Pen(Color.Blue, 2);  // Используем синюю ручку для рисования
+                DrawCircleBresenham(g, centerX, centerY, radius, pen);  // Рисуем окружность
+            }
+        }
+
+        // Метод рисования окружности методом Брезенхема
+        private void DrawCircleBresenham(Graphics g, int centerX, int centerY, int radius, Pen pen)
+        {
+            int x = 0;
+            int y = radius;
+            int p = 3 - 2 * radius;
+
+            // Рисуем 4 симметричные точки окружности
+            while (x <= y)
+            {
+                g.DrawRectangle(pen, centerX + x, centerY - y, 1, 1);  // Верхняя правая
+                g.DrawRectangle(pen, centerX - x, centerY - y, 1, 1);  // Верхняя левая
+                g.DrawRectangle(pen, centerX + x, centerY + y, 1, 1);  // Нижняя правая
+                g.DrawRectangle(pen, centerX - x, centerY + y, 1, 1);  // Нижняя левая
+                g.DrawRectangle(pen, centerX + y, centerY - x, 1, 1);  // Верхняя правая (с симметрией)
+                g.DrawRectangle(pen, centerX - y, centerY - x, 1, 1);  // Верхняя левая (с симметрией)
+                g.DrawRectangle(pen, centerX + y, centerY + x, 1, 1);  // Нижняя правая (с симметрией)
+                g.DrawRectangle(pen, centerX - y, centerY + x, 1, 1);  // Нижняя левая (с симметрией)
+
+                if (p <= 0)
+                {
+                    p += 4 * x + 6;
+                }
+                else
+                {
+                    p += 4 * (x - y) + 10;
+                    y--;
+                }
+                x++;
+            }
+        }
+
         // Метод для очистки панели
         private void ClearAll()
         {
             panel1.Invalidate();  // Очищаем панель
-            isEllipseDrawn = false;  // Сбрасываем флаг
         }
 
-        // Обработчик для кнопки очистки
-        private void ClearButton_Click(object sender, EventArgs e)
+        // Обработчик клика по кнопке очистки
+        private void btnClear_Click(object sender, EventArgs e)
         {
             ClearAll();  // Очищаем панель
         }
