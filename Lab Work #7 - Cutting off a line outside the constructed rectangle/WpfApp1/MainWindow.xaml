@@ -1,0 +1,42 @@
+﻿<Window x:Class="ClippingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Line Clipping" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Image x:Name="DrawingAreaImage" Stretch="None" Margin="0,0,-200,0"/>
+            <Canvas x:Name="DrawingAreaCanvas" Background="Transparent"
+                    MouseDown="DrawingAreaCanvas_MouseDown"
+                    MouseMove="DrawingAreaCanvas_MouseMove"
+                    MouseUp="DrawingAreaCanvas_MouseUp" Margin="0,0,-200,0"/>
+        </Grid>
+
+        <StackPanel Margin="310,356,110,-337">
+            <TextBlock Text="" FontWeight="Bold"/>
+
+            <!-- Убрали элементы, которые не используются в программе отсечения -->
+            <!-- <TextBlock Text="Цвет заливки:"/>
+            <xctk:ColorPicker x:Name="ColorPicker" SelectedColorChanged="ColorPicker_SelectedColorChanged"/>
+
+            <TextBlock Text="Допуск цвета:"/>
+            <Slider x:Name="ToleranceSlider" Minimum="0" Maximum="100" Value="20" ValueChanged="ToleranceSlider_ValueChanged"/>
+            <TextBlock Text="{Binding ElementName=ToleranceSlider, Path=Value, StringFormat='Допуск: {0:F0}'}"/>
+
+            <Button x:Name="FillTriangleButton" Content="Залить треугольник" Click="FillTriangleButton_Click" Margin="0,10,0,0"/> -->
+
+            <Button x:Name="Clearutton" Content="Очистить"  Margin="0,10,0,0" Click="Clearutton_Click"/>
+            <!--  Убрали элементы, связанные с заливкой 4-мя и 8-мью точками -->
+            <!-- <Button x:Name="FourWayButton" Content="4-точечное" Grid.Column="0" Grid.Row="3" Margin="5" Click="FourWayButton_Click"/>
+            <Button x:Name="EightWayButton" Content="8-точечное" Grid.Column="1" Grid.Row="3" Margin="5" Click="EightWayButton_Click"/> -->
+        </StackPanel>
+    </Grid>
+</Window>
