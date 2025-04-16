@@ -1,0 +1,29 @@
+﻿<Window x:Class="AffineTransformations3D.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Affine Transformations 3D" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Viewport3D Name="MyViewport" Grid.Column="0"/>
+
+        <StackPanel Margin="562,103,74,-83">
+            <TextBlock TextWrapping="Wrap"><Run Language="ru-ru" Text="Опции вращения"/></TextBlock>
+
+            <Label Content="Указать скорость вращения:"/>
+            <TextBox x:Name="AngleTextBox" Text="1" Width="100"/>
+            <Button Content="Изменить" x:Name="RotateButton" Click="RotateButton_Click" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap"><Run Language="ru-ru" Text="Выбрать ось вращения:"/></TextBlock>
+
+            <CheckBox Content="Вращение  оX" x:Name="RotatingXCheckBox" Checked="RotatingCheckBox_Checked" Unchecked="RotatingCheckBox_Unchecked" Margin="0,0,0,5"/>
+            <CheckBox Content="Вращение оY" x:Name="RotatingYCheckBox" Checked="RotatingCheckBox_Checked" Unchecked="RotatingCheckBox_Unchecked" Margin="0,0,0,5"/>
+            <CheckBox Content="Вращение оZ" x:Name="RotatingZCheckBox" Checked="RotatingCheckBox_Checked" Unchecked="RotatingCheckBox_Unchecked" Margin="0,0,0,10"/>
+
+            <Button Content="Сбросить вращение" x:Name="ResetRotationButton" Click="ResetRotationButton_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
