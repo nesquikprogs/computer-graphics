@@ -1,0 +1,37 @@
+﻿<Window x:Class="SeedFillApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Fill Methods &amp; Triangle Fill" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Image x:Name="DrawingAreaImage" Stretch="None" Margin="0,0,-200,0"/>
+            <Canvas x:Name="DrawingAreaCanvas" Background="Transparent"
+                    MouseDown="DrawingArea_MouseDown"
+                    MouseMove="DrawingArea_MouseMove"
+                    MouseUp="DrawingArea_MouseUp"
+                    MouseLeftButtonDown="DrawingArea_MouseLeftButtonDown" Margin="0,0,-200,0"/>
+        </Grid>
+
+        <StackPanel Margin="310,204,110,-184">
+            <TextBlock Text="Опции заливки" FontWeight="Bold"/>
+
+            <TextBlock Text="Выбрать цвет заливки:"/>
+            <xctk:ColorPicker x:Name="ColorPicker" SelectedColorChanged="ColorPicker_SelectedColorChanged"/>
+            <Button x:Name="Clearutton" Content="Очистить"  Margin="0,10,0,0" Click="Clearutton_Click"/>
+            <TextBlock TextWrapping="Wrap" Text="Выбрать метод заливки:"/>
+            <Button x:Name="FourWayButton" Content="4-точечное" Grid.Column="0" Grid.Row="3" Margin="5" Click="FourWayButton_Click"/>
+            <Button x:Name="EightWayButton" Content="8-точечное" Grid.Column="1" Grid.Row="3" Margin="5" Click="EightWayButton_Click"/>
+            <TextBlock TextWrapping="Wrap" Text="Часть 5-й лаб.р - треугольник"/>
+            <Button x:Name="FillTriangleButton" Content="Залить треугольник" Click="FillTriangleButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
