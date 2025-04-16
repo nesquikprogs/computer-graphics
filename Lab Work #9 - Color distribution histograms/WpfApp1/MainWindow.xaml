@@ -1,0 +1,37 @@
+﻿<Window x:Class="HistogramApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Histogram Builder" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="LoadImageButton" Content="Выбор изображения для анализа" Click="LoadImageButton_Click" Margin="10" Padding="5"/>
+
+
+        <Image x:Name="ImageViewer" Grid.Row="1" Margin="10" Stretch="Uniform"/>
+
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10">
+            <StackPanel>
+                <Label Content="Гистограма красного цвета"/>
+                <Canvas x:Name="RedHistogramCanvas" Width="256" Height="100" Background="LightGray" SizeChanged="Canvas_SizeChanged"/>
+            </StackPanel>
+
+            <StackPanel Margin="10,0,0,0">
+                <Label Content="Гистограма зеленого цвета"/>
+                <Canvas x:Name="GreenHistogramCanvas" Width="256" Height="100" Background="LightGray" SizeChanged="Canvas_SizeChanged"/>
+            </StackPanel>
+
+            <StackPanel Margin="10,0,0,0">
+                <Label Content="Гистограма синего цвета"/>
+                <Canvas x:Name="BlueHistogramCanvas" Width="256" Height="100" Background="LightGray" SizeChanged="Canvas_SizeChanged"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
